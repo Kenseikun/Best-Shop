@@ -29,16 +29,23 @@ font-family: 'Open Sans', sans-serif;
 
 .header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
     align-items: center;
     width: 100vw;
     height: 70px;
     box-shadow: 0 0 5px #000000;
+    background-color: var(--color-white);
+    z-index: 9999999;
 }
 
 .menu {
+    display: flex;
     margin: 0 auto;
     width: 1352px;
     background-color: #FFFFFF;
+    height: 100%;
 }
 
 .menu__container {
@@ -48,7 +55,9 @@ font-family: 'Open Sans', sans-serif;
 }
 
 
-.menu__logo {}
+.menu__logo {
+    text-decoration: none;
+}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -61,6 +70,7 @@ font-family: 'Open Sans', sans-serif;
 .menu__nav {
     display: flex;
     align-items: center;
+    height: 70px;
 
 }
 
@@ -74,6 +84,7 @@ font-family: 'Open Sans', sans-serif;
 
 .menu__nav ul li {
     display: inline;
+    height: 70px;
 }
 
 .menu__nav a {
@@ -82,6 +93,7 @@ font-family: 'Open Sans', sans-serif;
     padding: 8px;
     margin-left: 100px;
     transition: .5s;
+    height: 70px;
 }
 
 .menu__nav a:hover {
@@ -107,7 +119,7 @@ main {
     position: relative;
 }
 
-.main::before {
+/* .main::before {
     content: "";
     position: absolute;
     left: 0;
@@ -115,7 +127,7 @@ main {
     right: 0;
     bottom: 0;
     background: 0, 0, 0, 0.5;
-}
+} */
 
 .bg {
     text-align: center;
@@ -305,19 +317,38 @@ main {
 
 }
 
+.mackbook_bg {
+    position: relative;
+    z-index: 1;
+}
+
+.mackbook_bg::after {
+    position: absolute;
+    content: "";
+    top: -10%;
+    left: 65%;
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-redish);
+    border-radius: 20%;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
 
 .iphone_bg {
     position: relative;
     z-index: 1;
 }
 
+
 .iphone_bg::after {
     position: absolute;
     content: "";
     top: -30px;
     left: -60px;
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     background-color: var(--color-primary);
     border-radius: 50%;
     z-index: -1;
@@ -331,12 +362,20 @@ main {
     border-bottom: 2px solid var(--color-green);
 }
 
-.bottom__flex {
+.section_bottom-left {
     display: flex;
-    justify-content: space-between;
     width: 1124px;
 }
 
+
+.flex__bottom-left {
+    width: 300px;
+    height: 370px;
+}
+
+.bottom_picture {
+    margin-left: 50px;
+}
 
 /* -----PRICES----- */
 
