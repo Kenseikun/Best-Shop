@@ -23,3 +23,325 @@ font-family: 'Open Sans', sans-serif;
     --color-primary-shadow: rgba(7, 172, 230, .16);
 
 }
+
+
+/* ------------- MENU ------------*/
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    box-shadow: 0 0 5px #000000;
+}
+
+.menu {
+    margin: 0 auto;
+    width: 1352px;
+    background-color: #FFFFFF;
+}
+
+.menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu__logo {}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    color: var(--color-primary);
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.menu__nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu__nav ul {
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu__nav ul li {
+    display: inline;
+}
+
+.menu__nav a {
+    text-decoration: none;
+    color: var(--color-grey);
+    padding: 8px;
+    margin-left: 100px;
+    transition: .5s;
+}
+
+.menu__nav a:hover {
+    color: var(--color-black);
+    border-bottom: 3px solid var(--color-primary);
+    border-radius: 2px;
+}
+
+.menu__nav-clicked {
+    color: black;
+}
+
+
+/* -----MAIN----- */
+
+main {
+    height: 712px;
+    background: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: calc(200px - 70px);
+    position: relative;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: 0, 0, 0, 0.5;
+}
+
+.bg {
+    text-align: center;
+}
+
+
+.bg__title {
+    font-size: 49px;
+    color: var(--color-black);
+    font-family: 'Raleway', sans-serif;
+    font-weight: regular;
+    margin-bottom: 20px;
+}
+
+.bg_text {
+    font-size: 16px;
+    color: var(--color-black);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: regular;
+}
+
+.bg__button {
+    width: 440px;
+    height: 67px;
+    background-color: var(--color-primary);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--color-white);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    margin-top: 120px;
+
+    /* Nie wiem dlaczego nie dziala */
+    cursor: pointer;
+    transition: .3;
+}
+
+.bg__button:hover {
+    background-color: var(--color-white);
+    color: var(--color-green);
+    cursor: pointer;
+}
+
+
+/* -----SECTION----- */
+
+.section {
+    width: 100%;
+    height: 531px;
+}
+
+.section__container {
+    width: 800px;
+    height: 531px;
+    margin: 0 auto;
+}
+
+.section__text-p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: regular;
+    font-size: 36px;
+    color: var(--color-black);
+    padding-top: 100px;
+
+}
+
+.section__dots {}
+
+.dots__ins {}
+
+.section__dots {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.dots__ins {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.dots__ins::before {
+    position: absolute;
+    content: "";
+    top: 5%;
+    left: 25%;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.dots__ins .dot__title {
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 5.96px;
+    margin-bottom: 30px;
+}
+
+.dots__ins .dot__text {
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-grey);
+}
+
+
+/* -----SECTION _ INFO----- */
+
+.section__info {
+    background-color: var(--color-light-grey);
+}
+
+.section__info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1124px;
+    height: 1395px;
+
+}
+
+.section__info-first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1124px;
+    height: 370px;
+    background-color: var(--color-white);
+}
+
+.info__flex {
+    width: 416px;
+    height: 188px;
+}
+
+.info__title {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+}
+
+.info__text {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--color-redish);
+}
+
+.info__img {}
+
+.info__img img {
+    width: 386px;
+}
+
+.section_bottom-left {
+    width: 623px;
+    height: 370px;
+}
+
+.bottom_picture {
+    position: relative;
+    width: 440px;
+    height: 370px;
+    background-color: var(--color-green);
+}
+
+.bottom_picture img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 207px;
+    width: 295px;
+}
+
+.section__middle {
+    flex-direction: row-reverse;
+
+}
+
+
+.iphone_bg {
+    position: relative;
+    z-index: 1;
+}
+
+.iphone_bg::after {
+    position: absolute;
+    content: "";
+    top: -30px;
+    left: -60px;
+    width: 320px;
+    height: 320px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.info__text-blue {
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.info__text-green {
+    border-bottom: 2px solid var(--color-green);
+}
+
+.bottom__flex {
+    display: flex;
+    justify-content: space-between;
+    width: 1124px;
+}
+
+
+/* -----PRICES----- */
+
+.section_prices {
+    height: 1400px;
+    width: 100%;
+    background-color: pink;
+}
