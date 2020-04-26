@@ -646,6 +646,7 @@ input[type=text] {
     width: 22px;
     flex-shrink: 0;
     appearance: none;
+    outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     border: 1px solid #D1D1D1;
@@ -657,6 +658,7 @@ input[type=text] {
     background: url(../images/checkmark.svg);
     background-repeat: no-repeat;
     background-position: center;
+    border: 1px solid var(--color-green);
 }
 
 .form__send-btn {
