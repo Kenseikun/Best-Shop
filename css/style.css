@@ -614,11 +614,18 @@ label {
 input[type=text],
 input[type=email] {
     width: 100%;
+    outline: none;
     appearance: none;
     border: none;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--color-grey);
     appearance: none;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    border: 1px solid var(--color-green);
+    border-radius: 4px;
 }
 
 input[type=text] {
