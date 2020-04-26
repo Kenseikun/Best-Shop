@@ -94,6 +94,8 @@ font-family: 'Open Sans', sans-serif;
     margin-left: 100px;
     transition: .5s;
     height: 70px;
+
+    /* border: 2px solid red; */
 }
 
 .menu__nav a:hover {
@@ -380,7 +382,198 @@ main {
 /* -----PRICES----- */
 
 .section_prices {
-    height: 1400px;
     width: 100%;
-    background-color: pink;
+}
+
+.prices__container {
+    width: 1266px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--color-white);
+
+}
+
+.pricing {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-black);
+    font-weight: lighter;
+    padding-top: 50px;
+}
+
+.table__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1266px;
+    margin: 0 auto;
+    padding: 50px 0 100px 0;
+
+}
+
+.prices__tables {
+    position: relative;
+    width: 372px;
+    height: 461px;
+    border: 1px solid #FB3B64;
+    border-radius: 18px;
+}
+
+
+.prices__tables::before {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: "";
+    width: 150px;
+    height: 50px;
+    background-color: var(--color-redish);
+    border-radius: 23px;
+    border-radius: 23px;
+}
+
+
+.text__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 9px);
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-white);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.prices__table-inside {
+    text-align: center;
+}
+
+.table__name {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-black);
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.table__price {
+    font-size: 46px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-redish);
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+
+.table_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-black);
+
+}
+
+.tables__middle {
+    position: relative;
+    width: 405px;
+    height: 500px;
+    border: 1px solid var(--color-primary);
+    border-radius: 18px;
+    box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.tables__middle::before {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: "";
+    width: 150px;
+    height: 50px;
+    background-color: var(--color-primary);
+    border-radius: 23px;
+    border-radius: 23px;
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+
+.tables__right {
+    position: relative;
+    border: 1px solid var(--color-green);
+    border-radius: 18px;
+}
+
+.tables__right::before {
+    background-color: var(--color-green);
+}
+
+/* -----FORM----- */
+
+.formall__container {
+    border: 2px solid black;
+    width: 896px;
+    margin: 0 auto;
+}
+
+.contact {
+    width: 342px;
+
+    height: 600px;
+}
+
+.contact__question {
+    font-size: 49px;
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-black);
+    margin-bottom: 15px;
+}
+
+.contact__info {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-black);
+    font-weight: light;
+    margin-bottom: 30px;
+}
+
+.contact__email {
+    position: relative;
+    display: inline;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-grey);
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.contact__email::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: url(../images/mail\ _icon.svg);
+}
+
+.contact__number {
+    position: relative;
+    display: inline;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-grey);
+    padding-left: 30px;
+    margin-left: 10px;
+}
+
+.contact__number::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 27px;
+    width: 27px;
+    content: url(../images/phone_icon.svg);
 }
