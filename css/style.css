@@ -366,13 +366,18 @@ main {
 
 .section_bottom-left {
     display: flex;
+    justify-content: space-between;
     width: 1124px;
+    align-items: center;
+    background-color: var(--color-light-grey);
 }
 
 
 .flex__bottom-left {
-    width: 300px;
+    width: 623px;
     height: 370px;
+    padding: 100px 30px 0 30px;
+    background-color: var(--color-white);
 }
 
 .bottom_picture {
@@ -521,10 +526,13 @@ main {
     margin: 0 auto;
 }
 
+.form__container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .contact {
     width: 342px;
-
-    height: 600px;
 }
 
 .contact__question {
@@ -576,4 +584,90 @@ main {
     height: 27px;
     width: 27px;
     content: url(../images/phone_icon.svg);
+}
+
+.form__bottom {
+    width: 50%;
+}
+
+.form__name,
+.form__email {
+    text-align: left;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-primary);
+    font-weight: bold;
+    letter-spacing: 3.28px;
+    text-transform: uppercase;
+
+}
+
+.form-row {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: -9999999px;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    appearance: none;
+    border: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-grey);
+    appearance: none;
+}
+
+input[type=text] {
+    margin-bottom: 20px;
+}
+
+.checkbox__text {
+    display: inline;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #707070;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-checkbox__input {
+    margin-top: 20px;
+    height: 22px;
+    width: 22px;
+    flex-shrink: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px
+}
+
+.form-checkbox__input:checked {
+    background: url(../images/checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form__send-btn {
+    display: block;
+    width: 226px;
+    height: 57px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 35px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.button__postion {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-top: 30px
 }
